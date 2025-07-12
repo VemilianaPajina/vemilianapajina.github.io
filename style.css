@@ -58,6 +58,7 @@ body {
   color: #2c3e50;
   font-weight: 600;
 }
+
 /* Tambahkan ke style.css di bagian bawah */
 
 .page {
@@ -96,4 +97,49 @@ body {
 
 .btn-back:hover {
   color: #005fa3;
+}
+
+
+/* ✅ RESPONSIVE TAMBAHAN UNTUK HP */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero .content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero .image img {
+    width: 180px;
+    margin-top: 20px;
+  }
+
+  .nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .page {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .page h1 {
+    font-size: 24px;
+  }
+
+  .card {
+    font-size: 15px;
+  }
 }
