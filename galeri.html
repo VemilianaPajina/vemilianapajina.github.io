@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri - Vemiliana Pajina Waton</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+      color: #333;
+      margin: 0;
+      padding: 40px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h1 {
+      color: #f39c12;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .home-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #f39c12;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-btn:hover {
+      background-color: #f1c40f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Galeri Foto</h1>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="sd.jpg" alt="Vemiliana di SD">
+        <div class="caption">SD K Leter</div>
+      </div>
+      <div class="gallery-item">
+        <img src="smp.jpg" alt="Vemiliana di SMP">
+        <div class="caption">SMPN Lembah Seburi</div>
+      </div>
+      <div class="gallery-item">
+        <img src="sma.jpg" alt="Vemiliana di SMA">
+        <div class="caption">SMAN 1 Adonara Barat</div>
+      </div>
+      <div class="gallery-item">
+        <img src="desa.jpg" alt="Desa Ritawolo">
+        <div class="caption">Desa Ritawolo</div>
+      </div>
+      <div class="gallery-item">
+        <img src="universitas.jpg" alt="Universitas Budi Luhur">
+        <div class="caption">Universitas Budi Luhur</div>
+      </div>
+    </div>
+    <a class="home-btn" href="index.html">Home</a>
+  </div>
+</body>
+</html>
